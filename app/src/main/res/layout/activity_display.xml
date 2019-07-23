@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayActivity"
+    android:fitsSystemWindows="true">
+
+    <TextView
+        android:id="@+id/tv_profileDisplayHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile Details"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:textSize="30sp"
+        android:fontFamily="sans-serif-light"
+        />
+    <TextView
+        android:id="@+id/tv_nameHeading"
+        android:layout_below="@+id/tv_profileDisplayHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name : "
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_addressHeading"
+        android:layout_below="@+id/tv_nameHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address : "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_contactHeading"
+        android:layout_below="@+id/tv_addressHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact : "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_DOBHeading"
+        android:layout_below="@+id/tv_contactHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Of Birth : "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+    <TextView
+        android:id="@+id/tv_aadhaarHeading"
+        android:layout_below="@+id/tv_DOBHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aadhaar No : "
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <!-- Values for all the headings -->
+
+    <TextView
+        android:id="@+id/tv_aadhaarValue"
+        android:layout_toRightOf="@+id/tv_aadhaarHeading"
+        android:layout_below="@+id/tv_DOBHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ aadhaar number ]"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_DOBValue"
+        android:layout_toRightOf="@+id/tv_DOBHeading"
+        android:layout_below="@+id/tv_contactHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ date of birth ]"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_contactValue"
+        android:layout_toRightOf="@+id/tv_contactHeading"
+        android:layout_below="@+id/tv_addressHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ contact number ]"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_addressValue"
+        android:layout_toRightOf="@+id/tv_addressHeading"
+        android:layout_below="@+id/tv_nameHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ address ]"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/tv_nameValue"
+        android:layout_toRightOf="@+id/tv_nameHeading"
+        android:layout_below="@+id/tv_profileDisplayHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[ user name ]"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <Button
+        android:id="@+id/bt_editButton"
+        android:layout_below="@+id/tv_aadhaarHeading"
+        android:layout_centerHorizontal="true"
+        android:text="Edit Data"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_radius"
+        android:backgroundTint="#3FB6E4"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+
+    <Button
+        android:id="@+id/bt_logoutButton"
+        android:layout_below="@+id/bt_editButton"
+        android:layout_centerHorizontal="true"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:layout_marginTop="40dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_corner_radius"
+        android:backgroundTint="#3FB6E4"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+
+</RelativeLayout>

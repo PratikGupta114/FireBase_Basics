@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    >
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/firebase_logo"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="40dp"
+        />
+    <EditText
+        android:id="@+id/et_emailID"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:layout_marginTop="20dp"
+        android:hint="Email ID"
+        android:background="@drawable/rounded_corner_radius"
+        android:drawableLeft="@drawable/email_id"
+        android:drawablePadding="15dp"
+        />
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:background="@drawable/rounded_corner_radius"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="15dp"
+        />
+    <TextView
+        android:id="@+id/tv_errorText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text=""
+        android:textSize="17sp"
+        android:textColor="#fa0000"
+        android:layout_marginTop="10dp"
+        />
+    <Button
+        android:id="@+id/bt_loginButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="18sp"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:backgroundTint="#3FB6E4"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner_radius"
+
+        />
+    <TextView
+        android:id="@+id/tv_signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="New User ? Sign Up here"
+        android:layout_marginTop="20dp"
+        android:textSize="17dp"
+        />
+    <ProgressBar
+        android:id="@+id/pb_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:visibility="invisible"
+        android:indeterminateTint="#3FB6E4"
+        android:indeterminate="true"
+
+        />
+</LinearLayout>
+</ScrollView>

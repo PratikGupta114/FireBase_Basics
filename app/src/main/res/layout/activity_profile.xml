@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ProfileActivity"
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
+
+        <TextView
+            android:id="@+id/tv_welcomeMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello : "
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:textSize="20sp"
+            android:fontFamily="casual"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Help us know you better. "
+            android:textSize="20sp"
+            android:layout_marginTop="15sp"
+            android:layout_gravity="center"
+            android:fontFamily="casual"
+            />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                >
+
+                <EditText
+                    android:id="@+id/et_NameQuery"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_radius"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Name"
+                    android:paddingLeft="25dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_contactQuery"
+                    android:layout_below="@+id/et_NameQuery"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_radius"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Contact query"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_addressQuery"
+                    android:layout_below="@+id/et_contactQuery"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_radius"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Address"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_DOBQuery"
+                    android:layout_below="@+id/et_addressQuery"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_radius"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Date of Birth"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/et_aadharQuery"
+                    android:layout_below="@+id/et_DOBQuery"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_radius"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Aadhaar Number"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="25dp"
+                    android:paddingBottom="15dp"
+                    android:paddingTop="15dp"
+                    />
+                <TextView
+                    android:id="@+id/tv_errorText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="#fa0000"
+                    android:layout_below="@+id/et_aadharQuery"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    />
+
+                <Button
+                    android:id="@+id/bt_profile"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_errorText3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rounded_corner_radius"
+                    android:backgroundTint="#3FB6E4"
+                    android:text="Submit"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:textSize="18sp"
+                    />
+
+                <ProgressBar
+                    android:id="@+id/pb_profile"
+                    android:layout_below="@+id/bt_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="25dp"
+                    android:indeterminate="true"
+                    android:indeterminateTint="#3FB6E4"
+                    android:visibility="invisible"
+                    />
+            </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>
